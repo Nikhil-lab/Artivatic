@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="outer-div">
+
+  <div class="row">
+    <div class="col-md-12 col-lg-6">
+
+      <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Select a State</mat-label>
+        <mat-select [(value)]="selectedState" (selectionChange)="stateSelected()">
+          <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+      <div *ngIf="selectedState !=''" style="width:100%">
+        <mat-form-field appearance="outline">
+          <mat-label>Select a City</mat-label>
+          <mat-select [(value)]="selectedCity" (selectionChange)="cityChange()">
+            <mat-option *ngFor="let city of cities" [value]="city">{{city}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+    </div>
+
+    <div class="col-md-12 col-lg-6">
+      <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+  
+
+</div>
+
+
+
+
+
+

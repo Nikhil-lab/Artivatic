@@ -1,0 +1,43 @@
+agm-map {
+    height: 67vh;
+    width:100%;
+  }
+
+  .mat-form-field {
+    width: 100%;
+  }
+
+  .outer-div{
+    margin:2%;
+    border:2px solid #7b838b;
+    padding:2%;
+    height:78vh;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px 1px #ccc;
+    background:#FFFFFF;
+    overflow: auto;
+    border-radius: 3px #D6D6D6;
+    border-radius: 1rem;
+  }
+
+
+  #map {
+    height: 300px;
+  }
+  
+
+  
+  #floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    padding-left: 10px;
+  }
