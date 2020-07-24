@@ -8,7 +8,7 @@ export const environment = {
   apiKey:"your Google API Key"
 };
 
-/*AIzaSyAcO0iQJlCAE_TmyvOsNfD82AdJcUm3qLs
+/*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
  *
